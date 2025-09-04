@@ -134,7 +134,7 @@ function myCanvas() {
     // make a circle that symbolizes the animal classification
     ctx.beginPath();
     ctx.ellipse(canvas.width*0.92, (canvas.width*0.19)+(canvas.width*typnum*0.02), (canvas.width*0.012), (canvas.width*0.025), Math.PI / 2, 0, 2 * Math.PI);
-    ctx.lineWidth = 4;
+    ctx.lineWidth = canvas.width*0.002;
     ctx.strokeStyle = colour.value;
     ctx.stroke();
 
