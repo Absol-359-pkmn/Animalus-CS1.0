@@ -118,7 +118,7 @@ function myCanvas() {
         anima = anima -30
     }
 
-
+//printing the informetion from getelementbyid
     var colour = document.getElementById("colour")
     ctx.drawImage(CS,0,0,canvas.width,canvas.width*1.42);
     ctx.font = canvas.width*0.03+"px Arial";
