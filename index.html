@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アニマラスキャラシめーかー</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- Used for getElementById in canvas-->
+    <div style="display:none;">
+        <img id="CS" width="2481" height="3508" src="images/CS.png" alt="picture">
+    </div>
+    
+<header>
+    <h1>アニマラスキャラシめーかー（初期作成限定版）</h1>
+</header>
+
+<label for="name">Step 1. 盗掘者の名前を決めよう！ : </label>
+<br>
+<input type="text" id="name" placeholder="名前を記入..."> 
+<br><br>
+
+<!-- Used for getElementById in js, user put the parameters to get their character sheet done-->
+<label for="job">Step 2. 職業を決めよう！ : </label>
+<select name="job" id="job">
+    <option value="傭兵（マーシナリー）">傭兵（マーシナリー）</option>
+    <option value="機械技師（エンジニア）">機械技師（エンジニア）</option>
+    <option value="学者（スカラー）">学者（スカラー）</option>
+    <option value="医者（ドクター）">医者（ドクター）</option>
+    <option value="盗賊（シーカー）">盗賊（シーカー）</option>
+    <option value="商人（マーチャンター）">商人（マーチャンター）</option>
+</select>
+
+<br><br>
+<label for="race">Step 3. 種族を決めよう！ : </label>
+<br>
+<input type="text" id="race" placeholder="動物名を記入..."> 
+<label for="type">この動物は : </label>
+
+<select name="type" id="type">
+    <option value="carnivore">肉食獣</option>
+    <option value="herbivore">草食獣</option>
+    <option value="omnivore">雑食獣</option>
+</select>
+<br><br>
+
+<label for="gender">Step 4. 盗掘者の性別を決めよう！ : </label>
+<input type="text" id="gender" placeholder="性別を記入..." style="width: 10%;"> 
+<br><br>
+
+<label for="skill">Step 5. 盗掘者の年齢を記入しよう！ : </label>
+<input type="number" id="age" name="age" min="1" max="999" />
+<br><br>
+
+<label for="race">Step 6. 戦闘技能の技名を決めよう！ : </label>
+<br>
+<input type="text" id="attack" placeholder="技名を記入"> 
+<br>
+<input type="text" id="attack2" placeholder="技名を記入（追加で取得している場合）"> 
+<br><br>
+
+<label for="exskill">Step 7. 追加で技能を一つ取ろう！ : </label>
+<select name="exskill" id="exskill">
+    <option value="本能">本能</option>
+    <option value="人類学">人類学</option>
+    <option value="知恵">知恵</option>
+    <option value="観察">観察</option>
+    <option value="聴覚">聴覚</option>
+    <option value="嗅覚">嗅覚</option>
+    <option value="戦闘技能">戦闘技能</option>
+    <option value="何もない">追加で技能を取らない</option>
+</select>
+<br><br>
+
+<label for="skill">最後に、この盗掘者のイメージカラーは？ : </label>
+<select name="colour" id="colour">
+    <option value="red">赤色</option>
+    <option value="orange">橙色</option>
+    <option value="yellow">黄色</option>
+    <option value="lime">黄緑色</option>
+    <option value="green">緑色</option>
+    <option value="blue">青色</option>
+    <option value="purple">紫色</option>
+    <option value="pink">桃色</option>
+    <option value="cyan">水色</option>
+    <option value="gray">灰色</option>
+    <option value="black">黒色</option>
+</select>
+<br><br>
+
+<!-- creates character sheet made with the parameters-->
+<button onclick="myCanvas()">設定完了！</button>
+<br><br>
+
+<!-- posts commands for ccfolia made with the parameters -->
+       
+<label for="chat">ここにチャパレが出力されるよ！コピペしてね！ : </label>
+<p id="chat"></p>
+<br><br>
+
+<!-- base command needed for HTML canvas, size defined in script.js -->
+<canvas id="myCanvas" width="1" height="1">
+    Sorry, your browser does not support canvas.
+</canvas>
+
+
+
+<footer> 
+        サイト作成者: @SenpenBanka_359
+        <br>
+        ©K-monogram
+        <br>
+        イラスト：モトエナ、ゆめみ
+        <br>
+        コンセプトアート：ゆーち
+        <br>
+        K-monogram様公式サイト <a href="https://www.k-monogram.jp/">https://www.k-monogram.jp/</a>
+
+    </footer>
+
+    <!-- needed to load the script! -->
+    <script defer src="script/script.js" onload=""></script>
+
+</body>
+
+</html>
